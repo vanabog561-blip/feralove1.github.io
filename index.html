@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts" aria-hidden="true">♡ ♥ ♡ ♥ ♡</div>
+
+    <main class="container">
+        <section class="page active" id="page1">
+            <div class="content">
+                <span class="small-text">Маленькое послание для тебя</span>
+                <h1>Эй, красавица,<br>да-да, ты! ❤️</h1>
+                <p>Для тебя кое-что особенное...</p>
+                <button onclick="nextPage(2)">Нажми сюда 💌</button>
+            </div>
+        </section>
+
+        <section class="page" id="page2">
+            <div class="content">
+                <h1>Смотри, какая ты красивая 🥹</h1>
+                <div class="gallery">
+                    <img src="photos/page2-1.jpg" alt="Фото 1">
+                    <img src="photos/page2-2.jpg" alt="Фото 2">
+                    <img src="photos/page2-3.jpg" alt="Фото 3">
+                    <img src="photos/page2-4.jpg" alt="Фото 4">
+                </div>
+                <button onclick="nextPage(3)">Дальше ❤️</button>
+            </div>
+        </section>
+
+        <section class="page" id="page3">
+            <div class="content">
+                <h1>А это твой мальчик 💗</h1>
+                <div class="gallery">
+                    <img src="photos/page3-1.jpg" alt="Фото 1">
+                    <img src="photos/page3-2.jpg" alt="Фото 2">
+                    <img src="photos/page3-3.jpg" alt="Фото 3">
+                    <img src="photos/page3-4.jpg" alt="Фото 4">
+                </div>
+                <button onclick="nextPage(4)">Ещё чуть-чуть 💕</button>
+            </div>
+        </section>
+
+        <section class="page" id="page4">
+            <div class="content">
+                <h1>А это милые мы 🌷</h1>
+                <div class="gallery">
+                    <img src="photos/page4-1.jpg" alt="Фото 1">
+                    <img src="photos/page4-2.jpg" alt="Фото 2">
+                    <img src="photos/page4-3.jpg" alt="Фото 3">
+                    <img src="photos/page4-4.jpg" alt="Фото 4">
+                </div>
+                <button onclick="nextPage(5)">Последнее послание 💌</button>
+            </div>
+        </section>
+
+        <section class="page" id="page5">
+            <div class="content final-content">
+                <h1>Это всё для тебя ❤️</h1>
+                <img class="final-photo"
+                     src="photos/final.jpg"
+                     alt="Особенное фото">
+                <p>Включи эту песню и просто улыбнись 🎶</p>
+                <audio controls>
+                    <source src="music/song.mp3" type="audio/mpeg">
+                    Твой браузер не поддерживает аудио.
+                </audio>
+                <button onclick="nextPage(1)">Посмотреть ещё раз ↺</button>
+            </div>
+        </section>
+
+        <div class="counter" id="counter">1 / 5</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
